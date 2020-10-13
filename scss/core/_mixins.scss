@@ -1,0 +1,6 @@
+// Mixins
+
+@mixin sidebarNjedhul($time : .2s) {
+    animation-name: sidebarNjedhul;
+    animation-duration: #{$time};
+}

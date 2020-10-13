@@ -1,0 +1,135 @@
+// For Sidebar Navigation
+
+.sidebar {
+
+    // For Sidebar Light
+    &.sidebar-light {
+        min-height: 100vh;
+        width: 300px;
+        padding: 1rem;
+        overflow: visible;
+        position: static;
+        z-index: 989;
+        transition: .3s all ease-out;
+        background-color: $gray-100;
+
+        @include media-breakpoint-down('md') {
+            position: fixed !important;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        // Left To Right
+        .ltr-support & {
+
+            @include media-breakpoint-down('md') {
+                margin-left: -350px;
+
+                .toggled & {
+                    margin: 0;
+                    transition: .3s all ease-in;
+                }
+            }
+
+            @include media-breakpoint-up('md') {
+                .toggled & {
+                    width: 75px;
+                }
+            }
+
+            border-right: 1px solid $gray-300;
+
+            .sidebar-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                @include media-breakpoint-up('md') {
+                    justify-content: center;
+                }
+
+                align-items: center;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+
+                .sidebar-toggler {
+                    border: 0;
+                    outline: 0;
+                    background-color: transparent;
+                    padding: .5rem .65rem;
+
+                    @include media-breakpoint-up('md') {
+                        display: none;
+                    }
+                }
+
+                a {
+                    font-size: 1.25rem;
+                    text-decoration: none;
+                    color: $gray-700;
+
+                    img {
+                        max-height: 30px;
+                        width: auto;
+                    }
+
+                    .d-large {
+                        display: block;
+
+                        @include media-breakpoint-up('md') {
+                            .toggled & {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .d-sm {
+                        display: none;
+
+                        @include media-breakpoint-up('md') {
+                            .toggled & {
+                                display: block;
+
+                                img {
+                                    border-radius: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .after-header {
+                margin-bottom: 2.5rem;
+
+                @include media-breakpoint-up('md') {
+                    .toggled & {
+                        display: none;
+                    }
+                }
+
+                .media {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        max-height: 100px;
+                        width: auto;
+                    }
+
+                    .header-content {
+                        align-items: center;
+                        justify-content: center;
+
+                        p {
+                            font-size: .85rem;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana Admin</title>
+
+    <!-- Nana Admin Core -->
+    <link rel="stylesheet" href="../../css/nana-admin.css" />
+
+    <!-- Addons -->
+    <link rel="stylesheet" href="../../modul/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../../modul/ps/perfect-scrollbar.css">
+
+</head>
+<body class="">
+    
+    <div id="app" class="ltr-support d-flex flex-row">
+        <section class="sidebar-light sidebar">
+            <div class="sidebar-header">
+                <a href="../../index.html">
+                    <div class="d-large">
+                        <img src="https://via.placeholder.com/500x120" alt="" />
+                    </div>
+                    <div class="d-sm">
+                        <img src="https://via.placeholder.com/500x500" alt="" />
+                    </div>
+                </a>
+                <button class="sidebar-toggler">
+                    <span class="fas fa-times fa-fw"></span>
+                </button>
+            </div>
+
+            <div class="after-header">
+                <div class="media">
+                    <img src="../../img/profile-man.png" alt="User Photos" />
+                    <div class="header-content">
+                        <h5 class="m-0">Halo Cak Adi</h5>
+                        <p class="mb-2"><i class="fas fa-circle mr-2 text-success"></i>Dalam Jaringan</p>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav sidebar-nav accordion" id="wrapper">
+                <h6 class="nav-heading"><span>Menu Utama</span></h6>
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <span class="nav-icon"><i class="fas fa-fw fa-tachometer-alt"></i></span>
+                        <span class="ml-2">Dashboard</span>
+                        <span class="nav-badge">
+                        <span class="bg-white text-success badge">Default</span> </span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a data-toggle="collapse" href="#components" role="button" aria-expanded="true" aria-controls="components" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-box"></i></span>
+                        <span class="ml-2">Komponen Utama</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse show" data-nest="first" id="components" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <h6 class="submenu-heading">Komponen Utama Bootstrap 5</h6>
+                            <a href="/pages/components/ui-alerts.html" class="submenu-item">Alerts</a>
+                            <a href="/pages/components/ui-buttons.html" class="submenu-item active">Buttons</a>
+                            <a href="/pages/components/ui-badge.html" class="submenu-item">Badge</a> 
+                            <a href="/pages/components/ui-cards.html" class="submenu-item">Cards</a> 
+                            <a href="/pages/components/ui-dropdowns.html" class="submenu-item">Dropdowns</a>                            
+                            <a href="/pages/components/ui-navs.html" class="submenu-item">Tabs & Accordions</a> 
+                            <a href="/pages/components/ui-modals.html" class="submenu-item">Modals</a> 
+                            <a href="/pages/components/ui-images.html" class="submenu-item">Image Helper</a>                            
+                            <a href="/pages/components/ui-pagination.html" class="submenu-item">Pagination</a>
+                            <a href="/pages/components/ui-tooltips.html" class="submenu-item">Popovers & Tooltips</a>
+                            <a href="/pages/components/ui-carousel.html" class="submenu-item">Carousels</a>
+                            <a href="/pages/components/ui-video.html" class="submenu-item">Video & Embed</a>
+                            <a href="/pages/components/ui-typograph.html" class="submenu-item">Typograph</a> 
+                            <a href="/pages/components/ui-grid.html" class="submenu-item">Grid</a>
+                            <a href="/pages/components/ui-general.html" class="submenu-item">General UI</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#input" role="button" aria-expanded="false" aria-controls="input" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-i-cursor"></i></span> 
+                        <span class="ml-2">Form & Input</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="input" data-parent="#wrapper">
+                        <div class="submenu-wrapper"> 
+                            <a href="/pages/chart/chart-js.html" class="submenu-item">Form Regular</a> 
+                            <a href="/pages/chart/morris-js.html" class="submenu-item">Validation</a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/components/panel.html" class="nav-link"> <span class="nav-icon"><i class="fas fa-fw fa-box"></i></span> <span class="ml-2">Panel & Widgets</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#chart" role="button" aria-expanded="false" aria-controls="chart" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-chart-pie"></i></span> 
+                        <span class="ml-2">Chart</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="chart" data-parent="#wrapper">
+                        <div class="submenu-wrapper"> 
+                            <a href="/pages/chart/chart-js.html" class="submenu-item">Chart.js</a> 
+                            <a href="/pages/chart/morris-js.html" class="submenu-item">Morris.js</a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#tables" role="button" aria-expanded="false" aria-controls="tables" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-align-left"></i></span> 
+                        <span class="ml-2">Table</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="tables" data-parent="#wrapper">
+                        <div class="submenu-wrapper"> 
+                            <a href="/pages/components/table-bootstrap.html" class="submenu-item">Bootstrap Default</a> 
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#menu-depth" role="button" aria-expanded="false" aria-controls="menu-depth" class="submenu-item collapsed">
+                                    Datatables
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="menu-depth">
+                                    <div class="submenu-has-menu-wrapper"> 
+                                        <a href="/pages/components/datatable-default.html" class="submenu-has-menu-item">Datatable Regular</a> 
+                                        <a href="/pages/components/datatable-ajax.html" class="submenu-has-menu-item">Datatable Ajax</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#nesting" role="button" aria-expanded="false" aria-controls="nesting" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-share-alt"></i></span> 
+                        <span class="ml-2">Nesting</span>
+                        <span class="nav-badge blink">
+                            <span class="badge bg-success">Blinking</span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="nesting" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a href="#" class="submenu-item">Menu 1</a> <a href="#" class="submenu-item">
+                                Menu 1
+                                <span class="submenu-badge"><span class="badge bg-success">Static</span></span>
+                            </a> 
+                            <a href="#" class="submenu-item">
+                                Menu 1
+                                <span class="submenu-badge blink"><span class="badge bg-success">Blinking</span></span>
+                            </a>
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#menu-depth" role="button" aria-expanded="false" aria-controls="menu-depth" class="submenu-item collapsed">
+                                    Dropdown
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="menu-depth">
+                                    <div class="submenu-has-menu-wrapper"> 
+                                        <a href="" class="submenu-has-menu-item">Menu 1-1</a> 
+                                        <a href="" class="submenu-has-menu-item">Menu 1-2</a> 
+                                        <a href="" class="submenu-has-menu-item">Menu 1-3</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h6 class="nav-heading mt-3"><span>Tambahan</span></h6>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#icons" role="button" aria-expanded="true" aria-controls="icons" class="nav-link">
+                        <span class="nav-icon"><i class="fab fa-font-awesome"></i></span> <span class="ml-2">Icons</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="icons" data-parent="#wrapper">
+                        <div class="submenu-wrapper"> 
+                            <a href="/pages/icons/font-awesome.html" class="submenu-item">Font Awesome</a> 
+                            <a href="/pages/icons/material-icon.html" class="submenu-item">Material Icon</a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#pages" role="button" aria-expanded="false" aria-controls="pages" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-share-alt"></i></span> 
+                        <span class="ml-2">Halaman</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="pages" data-parent="#wrapper">
+                        <div class="submenu-wrapper" id="submenu-wrapper">
+                            <a href="/pages/page/blank.html" class="submenu-item active">Halaman Kosong</a>
+                            <a href="/pages/page/invoice.html" class="submenu-item">Tagihan</a>
+                            <a href="/pages/page/chat.html" class="submenu-item">Chatroom</a>
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#menu-depth" role="button" aria-expanded="false" aria-controls="menu-depth" class="submenu-item collapsed">
+                                    Autentikasi
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="menu-depth" data-parent="#submenu-wrapper">
+                                    <div class="submenu-has-menu-wrapper"> 
+                                        <a href="./auth/login-v.html" class="submenu-has-menu-item">Login (Vertical)</a> 
+                                        <a href="./auth/login-h.html" class="submenu-has-menu-item">Login (Horizontal)</a> 
+                                        <a href="./auth/register.html" class="submenu-has-menu-item">Register</a> 
+                                        <a href="./auth/forgot-password.html" class="submenu-has-menu-item">Forgot Password</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#pages-depth" role="button" aria-expanded="false" aria-controls="pages-depth" class="submenu-item collapsed">
+                                    Halaman
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="pages-depth" data-parent="#submenu-wrapper">
+                                    <div class="submenu-has-menu-wrapper"> 
+                                        <a href="./auth/error-404.html" class="submenu-has-menu-item">Error Not Found Page</a> 
+                                        <a href="./auth/error-500.html" class="submenu-has-menu-item">Error Server Error</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="my-3">
+                <a href="https://docs.iniadi.xyz/nana-admin/" class="btn btn-primary btn-block"><i class="fas fa-book mr-2"></i>Dokumentasi</a>
+            </div>
+        </section>
+        <section class="container-light container-wrap">
+            <main id="section-top">
+                <header class="header-main">
+                    <nav class="navbar-light navbar bg-transparent navbar-expand" id="topnav">
+                        <div class="container-fluid">
+                            <button class="sidebar-toggler">
+                                <span class="fas fa-bars fa-fw"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-user"></i> <span class="d-none d-md-inline d-sm-none ml-2">Halo Amir</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item bg-danger text-white" href="#"><i class="fas fa-sign-out-alt fa-fw mr-2"></i>Keluar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <section role="main" class="mt-3">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h4 class="m-0">Alerts UI</h4>
+                            </div>
+                            <div class="col-md-6 d-none d-md-inline d-sm-none">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb float-right bg-transparent m-0">
+                                        <li class="breadcrumb-item"><a href="https://nana-admin.iniadi.xyz">Nana Admin</a></li>
+                                        <li class="breadcrumb-item"><a href="https://nana-admin.iniadi.xyz">Components</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Alerts</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="row my-3">
+                            <div class="col-md-6 mb-3">
+                                <div class="card shadow-sm border-0 card-body">
+                                    <h3 class="mb-0">Alert Regular</h3>
+                                    <p>Komponen <code>.alert</code> biasa tanpa ada style apapun.</p>
+
+                                    <div class="alert alert-danger mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-info mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-success mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-warning mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-dark mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-secondary mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-light mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-white mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    
+                                    <div class="alert alert-light-danger mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-light-info mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-light-success mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-light-warning mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-light-dark mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-light-secondary mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-light-light mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                    <div class="alert alert-light-white mb-3">
+                                        <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card shadow-sm border-0 card-body">
+                                    <h3 class="mb-0">Alert Notification Icon</h3>
+                                    <p>Komponen <code>.alert</code> dengan style icon notifikasi di kiri dan tombol close di kanan.</p>
+
+                                    <div class="alert alert-noticon alert-danger mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-info mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-success mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-warning mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-dark mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-secondary mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-light mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close text-dark close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-white mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close text-dark close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="alert alert-noticon-alt alert-danger mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon-alt alert-info mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon-alt alert-success mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon-alt alert-warning mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon-alt alert-dark mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon-alt alert-secondary mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon-alt alert-light mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close text-dark close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon-alt alert-white mb-3">
+                                        <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close text-dark close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card shadow-sm border-0 card-body">
+                                    <h3 class="mb-0">Alert Close Icon</h3>
+                                    <p>Komponen <code>.alert</code> dengan style tombol close di kanan.</p>
+
+                                    <div class="alert alert-noticon alert-danger mb-3">
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-info mb-3">
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-success mb-3">
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-warning mb-3">
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-dark mb-3">
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-secondary mb-3">
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-light mb-3">
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close text-dark close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-noticon alert-white mb-3">
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                        <button type="button" class="close text-dark close-wrapper" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card shadow-sm border-0 card-body">
+                                    <h3 class="mb-0">Alert Icon Floating</h3>
+                                    <p>Komponen <code>.alert</code> dengan style icon float di kanan.</p>
+
+                                    <div class="alert alert-flicon alert-danger mb-3">
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                        </div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-flicon alert-info mb-3">
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-flicon alert-success mb-3">
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-flicon alert-warning mb-3">
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-exclamation-circle"></i>
+                                        </div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-flicon alert-dark mb-3">
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-flicon alert-secondary mb-3">
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-flicon alert-light mb-3">
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-flicon alert-white mb-3">
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="message-wrapper">
+                                            <p class="m-0">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" id="footer-main">
+                <div class="container-fluid">
+                    <span class="copyright">Hak Cipta 2020 &copy; <a href="https://nana-admin.iniadi.xyz">Nana Admin Template</a>.</span>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <button class="btn btn-btt btn-success"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Nana Admin Core  -->
+    <script src="../../modul/jquery/jquery.min.js"></script>
+    <script type="module" src="../../modul/popper.js/popper.min.js"></script>
+    <script src="../../modul/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Addons -->
+    <script src="../../modul/ps/perfect-scrollbar.min.js"></script>
+
+    <!-- Main -->
+    <script src="../../js/nana.js"></script>
+
+</body>
+</html>

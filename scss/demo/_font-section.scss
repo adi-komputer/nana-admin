@@ -1,0 +1,26 @@
+// Font Showcase
+
+.icon-demo-content {
+    text-align: center;
+
+    > [class*="col-"] {
+        display: flex;
+        flex-direction: column;
+
+        .fab,
+        .fas,
+        .far,
+        .fal,
+        
+        .material-icons {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            transition: .2s all;
+    
+            &:hover {
+                transform: scale(1.25);
+                color: $success;
+            }
+        }
+    }
+}

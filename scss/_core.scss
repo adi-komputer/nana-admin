@@ -1,0 +1,57 @@
+// Nana Admin Core
+
+@import "core/animate";
+@import "core/wrapper";
+@import "core/mixins";
+@import "core/navs";
+@import "core/topnav";
+@import "core/container";
+@import "footer";
+@import "demo";
+@import "hooks";
+@import "pages";
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" !default;
+@import url($web-font-path);
+
+// Scrollbar ========================================================
+::-webkit-scrollbar {
+    width: 10px;
+    transition: .3s all;
+    border-radius: 5px;
+
+    &-thumb {
+        background: $gray-600;
+        transition: .3s all;
+        border-radius: 5px;
+
+        &:hover {
+            background: $gray-700;
+            transition: .3s all;
+        }
+    }
+
+    &-track {
+        background: $gray-300;
+        transition: .3s all;
+    }
+}
+
+// Body & Wrapper Styling ==========================================
+body {
+    background-color: $gray-100;
+}
+
+a {
+    text-decoration: none;
+}
+
+#app, #app-login {
+    color: $gray-700;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#app-login {
+    min-height: 100% !important;
+}

@@ -1,0 +1,18 @@
+// Navbar =======================================================================
+
+.bg-primary {
+    .navbar-nav .active>.nav-link {
+      color: $success !important;
+    }
+  }
+  
+  .bg-dark {
+    &.navbar-dark .navbar-nav {
+  
+      .nav-link:focus,
+      .nav-link:hover,
+      .active>.nav-link {
+        color: $primary !important;
+      }
+    }
+  }

@@ -1,0 +1,21 @@
+// For Dropdown ==============================================
+
+.dropdown {
+    .dropdown-toggle {
+        align-items: center;
+        
+        &:after {
+            font-family: 'Font Awesome\ 5 Free';
+            content: '\f078';
+            font-weight: 900;
+            float: right;
+            margin-left: .5rem;
+            border: 0 !important;
+            transform: rotate(0deg);
+            transition: .3s all;
+        }
+        &.show:after {
+            transform: rotate(-180deg);
+        }
+    }
+}

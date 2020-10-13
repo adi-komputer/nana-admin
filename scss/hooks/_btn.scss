@@ -1,0 +1,35 @@
+// Buttons =====================================================================
+
+.btn {
+    &-rounded {
+        border-radius: 50px;
+
+        // Sizing
+        &.btn-sm {
+            padding: 0.25rem 1rem;
+        }
+
+        // Button Groups
+        &.btn-group {
+            .btn:first-child {
+                border-radius: 50px 0 0 50px;
+            }
+            .btn:last-child {
+                border-radius: 0 50px 50px 0;
+            }
+        }
+    }
+
+    &-secondary,
+    &-secondary:hover,
+    &-warning,
+    &-warning:hover,
+    &-success,
+    &-success:disabled,
+    &-outline-success:hover,
+    &-info,
+    &-info:disabled,
+    &-outline-info:hover {
+        color: #fff;
+    }
+}

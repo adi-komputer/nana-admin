@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana Admin</title>
+
+    <!-- Nana Admin Core -->
+    <link rel="stylesheet" href="../../css/nana-admin.css" />
+
+    <!-- Addons -->
+    <link rel="stylesheet" href="../../modul/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../../modul/ps/perfect-scrollbar.css">
+
+</head>
+
+<body class="">
+
+    <div id="app" class="ltr-support d-flex flex-row">
+        <section class="sidebar-light sidebar">
+            <div class="sidebar-header">
+                <a href="../../index.html">
+                    <div class="d-large">
+                        <img src="https://via.placeholder.com/500x120" alt="" />
+                    </div>
+                    <div class="d-sm">
+                        <img src="https://via.placeholder.com/500x500" alt="" />
+                    </div>
+                </a>
+                <button class="sidebar-toggler">
+                    <span class="fas fa-times fa-fw"></span>
+                </button>
+            </div>
+
+            <div class="after-header">
+                <div class="media">
+                    <img src="../../img/profile-man.png" alt="User Photos" />
+                    <div class="header-content">
+                        <h5 class="m-0">Halo Cak Adi</h5>
+                        <p class="mb-2"><i class="fas fa-circle mr-2 text-success"></i>Dalam Jaringan</p>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-block dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav sidebar-nav accordion" id="wrapper">
+                <h6 class="nav-heading"><span>Menu Utama</span></h6>
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <span class="nav-icon"><i class="fas fa-fw fa-tachometer-alt"></i></span>
+                        <span class="ml-2">Dashboard</span>
+                        <span class="nav-badge">
+                        <span class="bg-white text-success badge">Default</span> </span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a data-toggle="collapse" href="#components" role="button" aria-expanded="true" aria-controls="components" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-box"></i></span>
+                        <span class="ml-2">Komponen Utama</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse show" data-nest="first" id="components" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <h6 class="submenu-heading">Komponen Utama Bootstrap 5</h6>
+                            <a href="/pages/components/ui-alerts.html" class="submenu-item">Alerts</a>
+                            <a href="/pages/components/ui-buttons.html" class="submenu-item active">Buttons</a>
+                            <a href="/pages/components/ui-badge.html" class="submenu-item">Badge</a> 
+                            <a href="/pages/components/ui-cards.html" class="submenu-item">Cards</a> 
+                            <a href="/pages/components/ui-dropdowns.html" class="submenu-item">Dropdowns</a>                            
+                            <a href="/pages/components/ui-navs.html" class="submenu-item">Tabs & Accordions</a> 
+                            <a href="/pages/components/ui-modals.html" class="submenu-item">Modals</a> 
+                            <a href="/pages/components/ui-images.html" class="submenu-item">Image Helper</a>                            
+                            <a href="/pages/components/ui-pagination.html" class="submenu-item">Pagination</a>
+                            <a href="/pages/components/ui-tooltips.html" class="submenu-item">Popovers & Tooltips</a>
+                            <a href="/pages/components/ui-carousel.html" class="submenu-item">Carousels</a>
+                            <a href="/pages/components/ui-video.html" class="submenu-item">Video & Embed</a>
+                            <a href="/pages/components/ui-typograph.html" class="submenu-item">Typograph</a> 
+                            <a href="/pages/components/ui-grid.html" class="submenu-item">Grid</a>
+                            <a href="/pages/components/ui-general.html" class="submenu-item">General UI</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#input" role="button" aria-expanded="false" aria-controls="input" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-i-cursor"></i></span> 
+                        <span class="ml-2">Form & Input</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="input" data-parent="#wrapper">
+                        <div class="submenu-wrapper"> 
+                            <a href="/pages/chart/chart-js.html" class="submenu-item">Form Regular</a> 
+                            <a href="/pages/chart/morris-js.html" class="submenu-item">Validation</a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/components/panel.html" class="nav-link"> <span class="nav-icon"><i class="fas fa-fw fa-box"></i></span> <span class="ml-2">Panel & Widgets</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#chart" role="button" aria-expanded="false" aria-controls="chart" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-chart-pie"></i></span> 
+                        <span class="ml-2">Chart</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="chart" data-parent="#wrapper">
+                        <div class="submenu-wrapper"> 
+                            <a href="/pages/chart/chart-js.html" class="submenu-item">Chart.js</a> 
+                            <a href="/pages/chart/morris-js.html" class="submenu-item">Morris.js</a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#tables" role="button" aria-expanded="false" aria-controls="tables" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-align-left"></i></span> 
+                        <span class="ml-2">Table</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="tables" data-parent="#wrapper">
+                        <div class="submenu-wrapper"> 
+                            <a href="/pages/components/table-bootstrap.html" class="submenu-item">Bootstrap Default</a> 
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#menu-depth" role="button" aria-expanded="false" aria-controls="menu-depth" class="submenu-item collapsed">
+                                    Datatables
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="menu-depth">
+                                    <div class="submenu-has-menu-wrapper"> 
+                                        <a href="/pages/components/datatable-default.html" class="submenu-has-menu-item">Datatable Regular</a> 
+                                        <a href="/pages/components/datatable-ajax.html" class="submenu-has-menu-item">Datatable Ajax</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#nesting" role="button" aria-expanded="false" aria-controls="nesting" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-share-alt"></i></span> 
+                        <span class="ml-2">Nesting</span>
+                        <span class="nav-badge blink">
+                            <span class="badge bg-success">Blinking</span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="nesting" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a href="#" class="submenu-item">Menu 1</a> <a href="#" class="submenu-item">
+                                Menu 1
+                                <span class="submenu-badge"><span class="badge bg-success">Static</span></span>
+                            </a> 
+                            <a href="#" class="submenu-item">
+                                Menu 1
+                                <span class="submenu-badge blink"><span class="badge bg-success">Blinking</span></span>
+                            </a>
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#menu-depth" role="button" aria-expanded="false" aria-controls="menu-depth" class="submenu-item collapsed">
+                                    Dropdown
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="menu-depth">
+                                    <div class="submenu-has-menu-wrapper"> 
+                                        <a href="" class="submenu-has-menu-item">Menu 1-1</a> 
+                                        <a href="" class="submenu-has-menu-item">Menu 1-2</a> 
+                                        <a href="" class="submenu-has-menu-item">Menu 1-3</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <h6 class="nav-heading mt-3"><span>Tambahan</span></h6>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#icons" role="button" aria-expanded="true" aria-controls="icons" class="nav-link">
+                        <span class="nav-icon"><i class="fab fa-font-awesome"></i></span> <span class="ml-2">Icons</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="icons" data-parent="#wrapper">
+                        <div class="submenu-wrapper"> 
+                            <a href="/pages/icons/font-awesome.html" class="submenu-item">Font Awesome</a> 
+                            <a href="/pages/icons/material-icon.html" class="submenu-item">Material Icon</a> 
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#pages" role="button" aria-expanded="false" aria-controls="pages" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-share-alt"></i></span> 
+                        <span class="ml-2">Halaman</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                        <!-- Bisa menggunakan tag <i> -->
+                        </span>
+                    </a>
+                    <div class="collapse" data-nest="first" id="pages" data-parent="#wrapper">
+                        <div class="submenu-wrapper" id="submenu-wrapper">
+                            <a href="/pages/page/blank.html" class="submenu-item active">Halaman Kosong</a>
+                            <a href="/pages/page/invoice.html" class="submenu-item">Tagihan</a>
+                            <a href="/pages/page/chat.html" class="submenu-item">Chatroom</a>
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#menu-depth" role="button" aria-expanded="false" aria-controls="menu-depth" class="submenu-item collapsed">
+                                    Autentikasi
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="menu-depth" data-parent="#submenu-wrapper">
+                                    <div class="submenu-has-menu-wrapper"> 
+                                        <a href="./auth/login-v.html" class="submenu-has-menu-item">Login (Vertical)</a> 
+                                        <a href="./auth/login-h.html" class="submenu-has-menu-item">Login (Horizontal)</a> 
+                                        <a href="./auth/register.html" class="submenu-has-menu-item">Register</a> 
+                                        <a href="./auth/forgot-password.html" class="submenu-has-menu-item">Forgot Password</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#pages-depth" role="button" aria-expanded="false" aria-controls="pages-depth" class="submenu-item collapsed">
+                                    Halaman
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="pages-depth" data-parent="#submenu-wrapper">
+                                    <div class="submenu-has-menu-wrapper"> 
+                                        <a href="./auth/error-404.html" class="submenu-has-menu-item">Error Not Found Page</a> 
+                                        <a href="./auth/error-500.html" class="submenu-has-menu-item">Error Server Error</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="container-light container-wrap">
+            <main id="section-top">
+                <header class="header-main">
+                    <nav class="navbar-light navbar bg-transparent navbar-expand" id="topnav">
+                        <div class="container-fluid">
+                            <button class="sidebar-toggler">
+                                <span class="fas fa-bars fa-fw"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-user"></i> <span
+                                                class="d-none d-md-inline d-sm-none ml-2">Halo Amir</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item bg-danger text-white" href="#"><i
+                                                        class="fas fa-sign-out-alt fa-fw mr-2"></i>Keluar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <section role="main" class="mt-3">
+                    <div class="container-fluid mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h4 class="m-0">UI General</h4>
+                            </div>
+                            <div class="col-md-6 d-none d-md-inline d-sm-none">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb float-right bg-transparent m-0">
+                                        <li class="breadcrumb-item"><a href="https://nana-admin.iniadi.xyz">Nana Admin</a></li>
+                                        <li class="breadcrumb-item"><a href="https://nana-admin.iniadi.xyz">Components</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">UI General</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="accordion mb-3" id="accordionExample">
+                                    <div class="card border-0">
+                                        <div class="bg-white card-header border-0 pt-3" id="headingOne">
+                                            <h5 class="card-title my-2">
+                                                <a href="#" data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Accordion
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                                richardson ad squid. 3 wolf moon officia
+                                                aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                                laborum eiusmod. Brunch 3 wolf moon tempor,
+                                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                                shoreditch et. Nihil anim keffiyeh
+                                                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                proident. Ad vegan excepteur butcher vice lomo.
+                                                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                nesciunt you probably haven't heard of them
+                                                accusamus labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card border-0">
+                                        <div class="bg-white card-header border-0 pt-3" id="headingTwo">
+                                            <h5 class="card-title my-2">
+                                                <a href="#" data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Another one
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                                richardson ad squid. 3 wolf moon officia
+                                                aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                                laborum eiusmod. Brunch 3 wolf moon tempor,
+                                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                                shoreditch et. Nihil anim keffiyeh
+                                                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                proident. Ad vegan excepteur butcher vice lomo.
+                                                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                nesciunt you probably haven't heard of them
+                                                accusamus labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card border-0">
+                                        <div class="bg-white card-header border-0 pt-3" id="headingThree">
+                                            <h5 class="card-title my-2">
+                                                <a href="#" data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Something else
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                                richardson ad squid. 3 wolf moon officia
+                                                aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                                laborum eiusmod. Brunch 3 wolf moon tempor,
+                                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                                shoreditch et. Nihil anim keffiyeh
+                                                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                proident. Ad vegan excepteur butcher vice lomo.
+                                                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                nesciunt you probably haven't heard of them
+                                                accusamus labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Breadcrumbs</h5>
+                                        <h6 class="card-subtitle text-muted">Indicate the current page’s location within a
+                                            navigational hierarchy.</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active">Home</li>
+                                            </ol>
+                                        </nav>
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                                <li class="breadcrumb-item active">Library</li>
+                                            </ol>
+                                        </nav>
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                                <li class="breadcrumb-item active">Data</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+    
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Images</h5>
+                                        <h6 class="card-subtitle text-muted">Lightweight styles for images.</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <img class="rounded mr-2 mb-2" src="../../img/avatars/avatar-1.PNG" alt="Placeholder"
+                                                width="140" height="140">
+                                            <img class="rounded-circle rounded mr-2 mb-2" src="../../img/avatars/avatar-1.PNG"
+                                                alt="Placeholder" width="140" height="140">
+                                            <img class="img-thumbnail rounded mr-2 mb-2" src="../../img/avatars/avatar-1.PNG"
+                                                alt="Placeholder" width="140" height="140">
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Popovers</h5>
+                                        <h6 class="card-subtitle text-muted">Examples for adding Bootstrap popovers.</h6>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-secondary" type="button" title="Popover on top"
+                                            data-container="body" data-toggle="popover" data-placement="top"
+                                            data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover
+                                            on top</button>
+                                        <button class="btn btn-secondary" type="button" title="Popover on bottom"
+                                            data-container="body" data-toggle="popover" data-placement="bottom"
+                                            data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover
+                                            on bottom</button>
+                                        <button class="btn btn-secondary" type="button" title="Popover on left"
+                                            data-container="body" data-toggle="popover" data-placement="left"
+                                            data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover
+                                            on left</button>
+                                        <button class="btn btn-secondary" type="button" title="Popover on right"
+                                            data-container="body" data-toggle="popover" data-placement="right"
+                                            data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover
+                                            on right</button>
+                                    </div>
+                                </div>
+    
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Tooltips</h5>
+                                        <h6 class="card-subtitle text-muted">Examples for adding custom Bootstrap tooltips.
+                                        </h6>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" data-placement="top">
+                                            Tooltip top
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" data-placement="right">
+                                            Tooltip right
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" data-placement="left">
+                                            Tooltip left
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" data-placement="bottom">
+                                            Tooltip bottom
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Badges</h5>
+                                        <h6 class="card-subtitle text-muted">Examples for badges.</h6>
+                                    </div>
+                                    <div class="card-body">
+    
+                                        <div class="mb-1">
+                                            <span class="badge bg-primary">Primary</span>
+                                            <span class="badge bg-secondary">Secondary</span>
+                                            <span class="badge bg-success">Success</span>
+                                            <span class="badge bg-danger">Danger</span>
+                                            <span class="badge bg-warning">Warning</span>
+                                            <span class="badge bg-info">Info</span>
+                                        </div>
+    
+                                        <div class="mt-1">
+                                            <span class="badge bg-primary rounded-pill">Primary</span>
+                                            <span class="badge bg-secondary rounded-pill">Secondary</span>
+                                            <span class="badge bg-success rounded-pill">Success</span>
+                                            <span class="badge bg-danger rounded-pill">Danger</span>
+                                            <span class="badge bg-warning rounded-pill">Warning</span>
+                                            <span class="badge bg-info rounded-pill">Info</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Dropdowns</h5>
+                                        <h6 class="card-subtitle text-muted">Toggle contextual overlays for displaying lists
+                                            of links.</h6>
+                                    </div>
+                                    <div class="card-body pb-0">
+    
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+                                                <p class="mb-0">Basic:</p>
+                                                <div class="dropdown-menu mb-2" style="position:static;display:block;">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+                                                <p class="mb-0">Active:</p>
+                                                <div class="dropdown-menu mb-2" style="position:static;display:block;">
+                                                    <a class="dropdown-item" href="#">Regular link</a>
+                                                    <a class="dropdown-item active" href="#">Active link</a>
+                                                    <a class="dropdown-item" href="#">Another link</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+                                                <p class="mb-0">Disabled:</p>
+                                                <div class="dropdown-menu mb-2" style="position:static;display:block;">
+                                                    <a class="dropdown-item" href="#">Regular link</a>
+                                                    <a class="dropdown-item disabled" href="#">Disabled link</a>
+                                                    <a class="dropdown-item" href="#">Another link</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+                                                <p class="mb-0">Header:</p>
+                                                <div class="dropdown-menu mb-2" style="position:static;display:block;">
+                                                    <h6 class="dropdown-header">Dropdown header</h6>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+                                                <p class="mb-0">Dividers:</p>
+                                                <div class="dropdown-menu mb-2" style="position:static;display:block;">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+                                                <p class="mb-0">Text:</p>
+                                                <div class="dropdown-menu p-4 text-muted"
+                                                    style="max-width: 200px;position:static;display:block;">
+                                                    <p class="mb-0">
+                                                        Some example text that's free-flowing within the dropdown menu.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.row -->
+    
+                                    </div>
+                                </div>
+    
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Pagination</h5>
+                                        <h6 class="card-subtitle text-muted">Examples for showing pagination.</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination pagination-sm">
+                                                <li class="page-item"><a class="page-link" href="#"><i
+                                                            class="fas fa-angle-left"></i></a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="#"><i
+                                                            class="fas fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination pagination-md">
+                                                <li class="page-item"><a class="page-link" href="#"><i
+                                                            class="fas fa-angle-left"></i></a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="#"><i
+                                                            class="fas fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination pagination-lg">
+                                                <li class="page-item"><a class="page-link" href="#"><i
+                                                            class="fas fa-angle-left"></i></a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="#"><i
+                                                            class="fas fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+    
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Progress Bars</h5>
+                                        <h6 class="card-subtitle text-muted">Examples for using Bootstrap custom progress
+                                            bars.</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Default</div>
+                                        </div>
+    
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar"
+                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                Striped</div>
+                                        </div>
+    
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100">Animated</div>
+                                        </div>
+    
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Stacked</div>
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 15%"
+                                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 30%"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="bg-white card-header border-0 pt-3">
+                                        <h5 class="card-title">Spinners</h5>
+                                        <h6 class="card-subtitle text-muted">Indicate the loading state of a component with
+                                            Bootstrap spinners.</h6>
+                                    </div>
+                                    <div class="card-body">
+    
+                                        <div class="mb-2">
+                                            <div class="spinner-border text-dark mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-primary mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-secondary mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-success mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-danger mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-warning mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-info mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="mb-2">
+                                            <div class="spinner-border spinner-border-sm text-dark mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border spinner-border-sm text-primary mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border spinner-border-sm text-secondary mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border spinner-border-sm text-success mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border spinner-border-sm text-danger mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border spinner-border-sm text-warning mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border spinner-border-sm text-info mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                        </div>
+    
+                                        <hr />
+    
+                                        <div class="mb-2">
+                                            <div class="spinner-grow text-dark mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-primary mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-secondary mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-success mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-danger mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-warning mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-info mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="mb-2">
+                                            <div class="spinner-grow spinner-grow-sm text-dark mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-primary mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-secondary mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-success mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-danger mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-warning mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-info mr-2" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" id="footer-main">
+                <div class="container-fluid">
+                    <span class="copyright">Hak Cipta 2020 &copy; <a href="https://nana-admin.iniadi.xyz">Nana Admin
+                            Template</a>.</span>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <button class="btn btn-btt btn-success"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Nana Admin Core  -->
+    <script src="../../modul/jquery/jquery.min.js"></script>
+    <script type="module" src="../../modul/popper.js/popper.min.js"></script>
+    <script src="../../modul/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Addons -->
+    <script src="../../modul/ps/perfect-scrollbar.min.js"></script>
+
+    <!-- Main -->
+    <script src="../../js/nana.js"></script>
+
+</body>
+
+</html>

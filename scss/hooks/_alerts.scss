@@ -1,0 +1,247 @@
+// Alerts Bootstrap 5 and Hooks ==============================================================
+
+.close {
+    text-decoration: none;
+    opacity: 0.4;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}
+
+.badge {
+
+    &-secondary,
+    &-warning {
+        color: #fff;
+    }
+}
+
+.alert {
+    border: none;
+    color: $white;
+    border-radius: 7px;
+
+    &-noticon,
+    &-noticon-alt {
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+
+        .icon-wrapper {
+            &:first-child {
+                border-radius: 5px 0 0 5px;
+            }
+
+            &:last-child {
+                border-radius: 0 5px 5px 0;
+            }
+
+            padding: 1rem;
+            align-self: stretch;
+        }
+
+        .close-wrapper {
+            padding: 1rem;
+            color: $white;
+            align-self: stretch;
+        }
+
+        .message-wrapper {
+            padding: 1rem;
+        }
+    }
+
+    &-flicon {
+        display: relative;
+        overflow: hidden;
+
+        .icon-wrapper {
+            position: absolute;
+            z-index: 1;
+            top: -1rem;
+            left: -1rem;
+
+            .fas,
+            .fab,
+            .fal,
+            .far,
+            .icon-materialize {
+                font-size: 7rem;
+            }
+        }
+
+        .message-wrapper {
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    a,
+    .alert-link {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    @each $color,
+    $value in $theme-colors {
+        &-#{$color} {
+            @if $enable-gradients {
+                background: $value linear-gradient(180deg, mix($body-bg, $value, 15%), $value) repeat-x;
+            }
+
+            @else {
+                background-color: $value;
+            }
+
+            &.alert-noticon {
+                .icon-wrapper {
+                    background: darken($value, 25%);
+
+                    .fas,
+                    .fab,
+                    .fal,
+                    .far,
+                    .icon-materialize {
+                        color: $white !important;
+                    }
+                }
+            }
+
+            &.alert-flicon {
+                .icon-wrapper {
+
+                    .fas,
+                    .fab,
+                    .fal,
+                    .far,
+                    .icon-materialize {
+                        color: lighten($value, 15%)
+                    }
+                }
+            }
+
+            &.alert-noticon-alt {
+                background: $white;
+                border: 1px solid $value;
+
+                .close-wrapper {
+                    color: $value;
+                }
+
+                .icon-wrapper {
+                    background: $value;
+                }
+
+                .message-wrapper {
+                    color: $dark !important;
+                }
+            }
+        }
+
+        &-light-#{$color} {
+            background-color: lighten($value, 40%);
+            border: 1px solid $value;
+
+            @if $value=='warning' {
+                color: darken($value, 45%);
+            }
+
+            @else {
+                color: darken($value, 20%);
+            }
+        }
+    }
+
+    &-light {
+
+        .icon-wrapper {
+
+            .fas,
+            .fab,
+            .fal,
+            .far,
+            .icon-materialize {
+                color: $dark;
+            }
+        }
+
+        &,
+        & a,
+        & .alert-link {
+            color: $body-color;
+        }
+    }
+
+    &-white {
+        border: 1px solid $gray-300;
+        color: $dark;
+
+        &,
+        & a,
+        & .alert-link {
+            color: $dark;
+        }
+
+        &.alert-noticon {
+            border: 1px solid $gray-300;
+
+            .icon-wrapper {
+                background-color: darken($white, 10%);
+
+                .fas,
+                .fab,
+                .fal,
+                .far,
+                .icon-materialize {
+                    color: $dark !important;
+                }
+            }
+        }
+
+        &.alert-noticon-alt {
+            border: 1px solid $gray-300;
+
+            .icon-wrapper {
+                background-color: $gray-300;
+
+                .fas,
+                .fab,
+                .fal,
+                .far,
+                .icon-materialize {
+                    color: $dark !important;
+                }
+            }
+        }
+
+        &.alert-flicon {
+
+            .fas,
+            .fab,
+            .fal,
+            .far,
+            .icon-materialize {
+                color: lighten($dark, 45%) !important;
+            }
+        }
+    }
+
+    &-light-light {
+
+        &,
+        & a,
+        & .alert-link {
+            color: $body-color;
+        }
+    }
+
+    &-light-white {
+        color: $dark !important;
+    }
+
+    &-light-warning {
+        background-color: lighten($warning, 20%);
+    }
+}

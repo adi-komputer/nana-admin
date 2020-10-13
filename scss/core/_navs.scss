@@ -1,0 +1,292 @@
+// Sidebar Nav Items
+
+.sidebar {
+    &.sidebar-light {
+        .ltr-support & {
+
+            .sidebar-nav {
+                display: flex;
+                flex-direction: column;
+
+                h6.nav-heading {
+                    @include media-breakpoint-up('md') {
+                        .toggled & {
+                            display: none;
+                        }
+                    }
+
+                    border-bottom: 1px solid darken($gray-100, 7.5%);
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 1.5rem;
+
+                    span {
+                        position: absolute;
+                        margin-top: -20px;
+                        background: $gray-100;
+                        padding: .5rem 1rem;
+                        margin-left: 1rem;
+                    }
+                }
+
+                .nav-item {
+                    margin-bottom: .5rem;
+                    position: relative;
+
+                    &:last-child {
+                        .collapse {
+                            .toggled & {
+                                bottom: 8px !important;
+                                top: unset !important;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        .nav-link {
+                            color: $gray-700;
+                            background-color: $gray-300;
+                            margin-bottom: .5rem;
+                            border-radius: 5px;
+
+                            @include media-breakpoint-up('md') {
+                                .toggled & {
+                                    padding: .5rem;
+                                    text-align: center;
+                                }
+                            }
+
+                            &:hover {
+                                background-color: $gray-300;
+                            }
+
+                            .nav-badge {
+                                position: relative;
+                                margin-left: 1rem;
+                                float: right !important;
+
+                                &.blink {
+                                    animation: blink 1s linear infinite;
+                                }
+
+                                @include media-breakpoint-up('md') {
+                                    .toggled & {
+                                        position: absolute;
+                                        margin: 0 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .collapse,
+                    .collapsing {
+                        border-top: $dropdown-border-width solid $dropdown-border-color;
+
+                        @include media-breakpoint-up('md') {
+                            .toggled &[data-nest="first"] {
+                                border: 0 !important;
+                                position: absolute;
+                                left: 3.75rem;
+                                z-index: 1;
+                                top: 2px;
+                                min-width: 250px;
+                                @include sidebarNjedhul('.2s');
+                                z-index: 999;
+                            }
+                        }
+
+                        .submenu-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            background: $white;
+                            border-radius: 0 0 5px 5px;
+                            margin: 0 1rem;
+                            padding: 1rem 0;
+                            border: $dropdown-border-width solid $dropdown-border-color;
+                            border-top: 0;
+                            max-height: 300px;
+                            overflow: auto;
+                            position: relative;
+
+                            .submenu-has-menu {
+                                display: block;
+
+                                .submenu-item {
+                                    display: block;
+
+                                    &[data-toggle="collapse"] .indicator {
+                                        float: right;
+                                        text-align: right;
+                                        transform: rotate(90deg);
+                                        transition: 300ms ease all;
+                                    }
+
+                                    &[data-toggle="collapse"].collapsed .indicator {
+                                        transform: rotate(0deg);
+                                    }
+                                }
+
+                                .submenu-has-menu-wrapper {
+                                    display: flex;
+                                    flex-direction: column;
+                                    background: $white;
+                                    border-radius: 0 0 5px 5px;
+                                    margin: 0 1rem;
+                                    padding: 1rem 0;
+                                    border: $dropdown-border-width solid $dropdown-border-color;
+                                    border-top: 0;
+
+                                    .submenu-has-menu-item {
+                                        text-decoration: none;
+                                        padding: .5rem 1rem;
+                                        color: $gray-700;
+                                        margin: 0 1rem;
+                                        border-radius: 5px;
+
+                                        &:hover {
+                                            background-color: rgba($dark, .1);
+                                        }
+
+                                        &.active {
+                                            background-color: $success;
+                                            color: $white;
+                                        }
+
+                                        .submenu-badge {
+                                            position: relative;
+                                            margin-left: 1rem;
+                                            float: right !important;
+
+                                            &.blink {
+                                                animation: blink 1s linear infinite;
+                                            }
+
+                                            @include media-breakpoint-up('md') {
+                                                .toggled & {
+                                                    position: absolute;
+                                                    margin: 0 !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .submenu-heading {
+                                margin-bottom: .5rem;
+                                padding: 0 2rem;
+                                color: $gray-500;
+                                font-size: .85 * $font-size-base;
+                            }
+
+                            .toggled & {
+                                border-radius: 5px;
+                                box-shadow: 0 4px 8px rgba($dark, .25);
+                            }
+
+                            .submenu-item {
+                                text-decoration: none;
+                                padding: .5rem 1rem;
+                                color: $gray-700;
+                                margin: 0 1rem;
+                                border-radius: 5px;
+
+                                &:hover {
+                                    background-color: rgba($dark, .1);
+                                }
+
+                                &.active {
+                                    background-color: $success;
+                                    color: $white;
+                                }
+
+                                .submenu-badge {
+                                    position: relative;
+                                    margin-left: 1rem;
+                                    float: right !important;
+
+                                    &.blink {
+                                        animation: blink 1s linear infinite;
+                                    }
+
+                                    @include media-breakpoint-up('md') {
+                                        .toggled & {
+                                            position: absolute;
+                                            margin: 0 !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    @include media-breakpoint-up('md') {
+                        .collapsing {
+                            .toggled &[data-nest="first"] {
+                                display: none;
+                                transition: none;
+                            }
+                        }
+                    }
+
+                    .nav-link {
+                        color: $gray-700;
+                        margin-bottom: .5rem;
+
+                        @include media-breakpoint-up('md') {
+                            .toggled & {
+                                padding: .5rem;
+                                text-align: center;
+
+                                span.ml-2 {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .nav-badge {
+                            position: relative;
+                            margin-left: 1rem;
+                            float: right;
+
+                            &.blink {
+                                animation: blink 1s linear infinite;
+                            }
+
+                            @include media-breakpoint-up('md') {
+                                .toggled & {
+                                    position: absolute;
+                                    margin: 0 !important;
+                                }
+                            }
+                        }
+
+                        &[data-toggle="collapse"] .indicator {
+                            float: right;
+                            text-align: right;
+                            transform: rotate(90deg);
+                            transition: 300ms ease all;
+
+                            @include media-breakpoint-up('md') {
+                                .toggled & {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        &[data-toggle="collapse"].collapsed .indicator {
+                            transform: rotate(0deg);
+                        }
+
+                        &:hover {
+                            border-radius: 5px;
+                            background-color: $gray-200;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

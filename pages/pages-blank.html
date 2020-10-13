@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana Admin</title>
+    <link rel="shortcut icon" href="/img/brands/icon-main-colored.png" type="image/x-icon">
+
+    <!-- Nana Admin Core -->
+    <link rel="stylesheet" href="/css/nana-admin.css" />
+
+    <!-- Addons -->
+    <link rel="stylesheet" href="/modul/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/modul/ps/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/modul/calendar.js/main.min.css" />
+
+</head>
+<body class="">
+    
+    <div id="app" class="ltr-support d-flex flex-row">
+        <section class="sidebar-light sidebar">
+            <div class="sidebar-header">
+                <a href="index.html">
+                    <div class="d-large">
+                        <img src="/img/brands/logo-color.png" alt="" />
+                    </div>
+                    <div class="d-sm">
+                        <img src="/img/brands/icon-main-colored.png" alt="" />
+                    </div>
+                </a>
+                <button class="sidebar-toggler">
+                    <span class="fas fa-times fa-fw"></span>
+                </button>
+            </div>
+
+            <div class="after-header">
+                <div class="media">
+                    <img src="/img/profile-man.png" alt="User Photos" />
+                    <div class="header-content mt-3 text-center">
+                        <h5 class="m-0">Halo Cak Adi</h5>
+                        <p class="mb-2"><i class="fas fa-circle mr-2 text-success"></i>Dalam Jaringan</p>
+                        <div class="dropdown btn-group btn-group-rounded">
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cog"></i></a>
+                            <a href="#" class="btn btn-success"><i class="fas fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav sidebar-nav accordion" id="wrapper">
+                <h6 class="nav-heading"><span>Main</span></h6>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#dashboard" role="button" aria-expanded="false" aria-controls="dashboard" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-tachometer-alt"></i></span>
+                        <span class="ml-2">Dasbor</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="dashboard" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="/pages/index.html">Default</a>
+                            <a class="submenu-item" href="/pages/index-2.html">Banking</a>
+                            <a class="submenu-item" href="/pages/index-3.html">CRM</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#elements" role="button" aria-expanded="false" aria-controls="elements" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fab fa-fw fa-bootstrap"></i></span>
+                        <span class="ml-2">Komponen Utama</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="elements" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="/pages/components/ui-alerts.html">Alerts</a>
+                            <a class="submenu-item" href="/pages/components/ui-buttons.html">Buttons</a>
+                            <a class="submenu-item" href="/pages/components/ui-badge.html">Badge</a>
+                            <a class="submenu-item" href="/pages/components/ui-cards.html">Cards</a>
+                            <a class="submenu-item" href="/pages/components/ui-dropdowns.html">Dropdowns</a>
+                            <a class="submenu-item" href="/pages/components/ui-tabs-accordions.html">Tabs &amp; Accordions</a>
+                            <a class="submenu-item" href="/pages/components/ui-modals.html">Modals</a>
+                            <a class="submenu-item" href="/pages/components/ui-images.html">Images</a>
+                            <a class="submenu-item" href="/pages/components/ui-progressbars.html">Progress Bars</a>
+                            <a class="submenu-item" href="/pages/components/ui-navs.html">Navs</a>
+                            <a class="submenu-item" href="/pages/components/ui-pagination.html">Pagination</a>
+                            <a class="submenu-item" href="/pages/components/ui-popover-tooltips.html">Popover & Tooltips</a>
+                            <a class="submenu-item" href="/pages/components/ui-carousel.html">Carousel</a>
+                            <a class="submenu-item" href="/pages/components/ui-video.html">Video</a>
+                            <a class="submenu-item" href="/pages/components/ui-typography.html">Typography</a>
+                            <a class="submenu-item" href="/pages/components/ui-grid.html">Grid</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#advanced-elements" role="button" aria-expanded="false" aria-controls="advanced-elements" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-box"></i></span>
+                        <span class="ml-2">Komponen Lanjutan</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="advanced-elements" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="/pages/components/advanced-alertify.html">Alertify</a>
+                            <a class="submenu-item" href="/pages/components/advanced-rangeslider.html">Range Slider</a>
+                            <a class="submenu-item" href="/pages/components/advanced-sweet-alert.html">Sweet-Alert</a>
+                            <a class="submenu-item" href="/pages/components/advanced-lightbox.html">Lightbox</a>
+                            <a class="submenu-item" href="/pages/components/advanced-toast.html">Toast</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-paragraph"></i></span>
+                        <span class="ml-2">Forms</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="forms" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="/pages/forms/form-elements.html">Form Elements</a>
+                            <a class="submenu-item" href="/pages/forms/form-validation.html">Form Validation</a>
+                            <a class="submenu-item" href="/pages/forms/form-advanced.html">Form Advanced</a>
+                            <a class="submenu-item" href="/pages/forms/form-editors.html">Form Editors</a>
+                            <a class="submenu-item" href="/pages/forms/form-summernote.html">Summernote</a>
+                            <a class="submenu-item" href="/pages/forms/form-uploads.html">File Upload</a>
+                            <a class="submenu-item" href="/pages/forms/form-mask.html">Mask</a>
+                            <a class="submenu-item" href="/pages/forms/form-xeditable.html">Xeditable</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#chart" role="button" aria-expanded="false" aria-controls="chart" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-chart-pie"></i></span>
+                        <span class="ml-2">Diagram</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="chart" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="/pages/chart/charts-morris.html">Morris Chart</a>
+                            <a class="submenu-item" href="/pages/chart/charts-chartjs.html">Chartjs Chart</a>
+                            <a class="submenu-item" href="/pages/chart/charts-chartist.html">Chartist Chart</a>
+                            <a class="submenu-item" href="/pages/chart/charts-flot.html">Flot Chart</a>
+                            <a class="submenu-item" href="/pages/chart/charts-c3.html">C3 Chart</a>
+                            <a class="submenu-item" href="/pages/chart/charts-other.html">Knob Chart</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#tables" role="button" aria-expanded="false" aria-controls="tables" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-table"></i></span>
+                        <span class="ml-2">Tabel</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="tables" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="/pages/tables/tables-basic.html">Basic Tables</a>
+                            <a class="submenu-item" href="/pages/tables/tables-responsive.html">Responsive Table</a>
+                            <a class="submenu-item" href="/pages/tables/tables-datatable.html">Data Table</a>
+                            <a class="submenu-item" href="/pages/tables/tables-editable.html">Editable Table</a>
+                        </div>
+                    </div>
+                </li>
+                <h6 class="nav-heading my-3 pt-3"><span>Ekstra</span></h6>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#maps" role="button" aria-expanded="false" aria-controls="maps" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-map-marker"></i></span>
+                        <span class="ml-2">Peta</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="maps" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="maps-google.html">Google Map</a>
+                            <a class="submenu-item" href="maps-vector.html">Vector Map</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#icon" role="button" aria-expanded="false" aria-controls="icon" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-flag"></i></span>
+                        <span class="ml-2">Ikon</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="icon" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="/pages/icons/icons-material.html">Material Design</a>
+                            <a class="submenu-item" href="/pages/icons/icons-ion.html">Ion Icons</a>
+                            <a class="submenu-item" href="/pages/icons/icons-fontawesome.html">Font Awesome</a>
+                            <a class="submenu-item" href="/pages/icons/icons-dripicons.html">Dripicons</a>
+                            <a class="submenu-item" href="/pages/icons/icons-typicons.html">Typicons Icons</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/calendar.html" class="nav-link">
+                        <span class="nav-icon"><i class="fas fa-fw fa-calendar"></i></span>
+                        <span class="ml-2">Kalender</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a data-toggle="collapse" href="#pages" role="button" aria-expanded="true" aria-controls="pages" class="nav-link">
+                        <span class="nav-icon"><i class="fas fa-fw fa-file-archive"></i></span>
+                        <span class="ml-2">Halaman</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="pages" class="collapse show" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item active" href="/pages/pages-blank.html">Blank Page</a>
+                            <a class="submenu-item" href="/pages/pages-login.html">Login</a>
+                            <a class="submenu-item" href="/pages/pages-register.html">Register</a>
+                            <a class="submenu-item" href="/pages/pages-recoverpw.html">Recover Password</a>
+                            <a class="submenu-item" href="/pages/pages-lock-screen.html">Lock Screen</a>
+                            <a class="submenu-item" href="/pages/pages-404.html">Error 404</a>
+                            <a class="submenu-item" href="/pages/pages-500.html">Error 500</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#extra" role="button" aria-expanded="false" aria-controls="extra" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-eye"></i></span>
+                        <span class="ml-2">Lain-Lain</span>
+                        <span class="indicator">
+                            <span class="fas fa-chevron-right"></span>
+                            <!-- Bisa menggunakan tag <i class="fas fa-fw fa-"></i> -->
+                        </span>
+                    </a>
+                    <div id="extra" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper">
+                            <a class="submenu-item" href="extras-pricing.html">Pricing</a>
+                            <a class="submenu-item" href="extras-invoice.html">Invoice</a>
+                            <a class="submenu-item" href="extras-timeline.html">Timeline</a>
+                            <a class="submenu-item" href="extras-faqs.html">FAQs</a>
+                            <a class="submenu-item" href="extras-maintenance.html">Maintenance</a>
+                            <a class="submenu-item" href="extras-comingsoon.html">Coming Soon</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#dropdown" role="button" aria-expanded="false" aria-controls="dropdown" class="nav-link collapsed">
+                        <span class="nav-icon"><i class="fas fa-fw fa-eye"></i></span>
+                        <span class="ml-2">Dropdown</span>
+                        <span class="nav-badge blink">
+                            <span class="badge bg-danger">Blinking</span>
+                        </span>
+                    </a>
+                    <div id="dropdown" class="collapse" data-nest="first" data-parent="#wrapper">
+                        <div class="submenu-wrapper accordion" id="submenu">
+                            <a href="#" class="submenu-item">Sub-menu Dropdown</a>
+                            <a href="#" class="submenu-item">Sub-menu Dropdown</a>
+                            <a href="#" class="submenu-item">Sub-menu Dropdown</a>
+                            <div class="submenu-has-menu">
+                                <a data-toggle="collapse" href="#has-submenu-1" role="button" aria-expanded="false" aria-controls="has-submenu-1" class="submenu-item">
+                                    <span class="nav-icon"><i class="fas fa-fw fa-eye"></i></span>
+                                    <span class="ml-2">Sub-menu</span>
+                                    <span class="indicator">
+                                        <span class="fas fa-chevron-right"></span> 
+                                        <!-- Bisa menggunakan tag <i> -->
+                                    </span>
+                                </a>
+                                <div class="collapse" id="has-submenu-1" data-parent="#submenu">
+                                    <div class="submenu-has-menu-wrapper">
+                                        <a href="#" class="submenu-has-menu-item">Sub Sub-menu Item</a>
+                                        <a href="#" class="submenu-has-menu-item">Sub Sub-menu Item</a>
+                                        <a href="#" class="submenu-has-menu-item">Sub Sub-menu Item</a>
+                                        <a href="#" class="submenu-has-menu-item">Sub Sub-menu Item</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="container-light container-wrap">
+            <main id="section-top">
+                <header class="header-main">
+                    <nav class="navbar-light navbar bg-transparent navbar-expand" id="topnav">
+                        <div class="container-fluid">
+                            <button class="sidebar-toggler">
+                                <span class="fas fa-bars fa-fw"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-user"></i> <span class="d-none d-md-inline d-sm-none ml-2">Halo Amir</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item bg-danger text-white" href="#"><i class="fas fa-sign-out-alt fa-fw mr-2"></i>Keluar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <section role="main" class="mt-3">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h4 class="m-0">Blank Page</h4>
+                            </div>
+                            <div class="col-md-6 d-none d-md-inline d-sm-none">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb float-right bg-transparent m-0">
+                                        <li class="breadcrumb-item"><a href="https://nana-admin.iniadi.xyz">Nana Admin</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Blank</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" id="footer-main">
+                <div class="container-fluid">
+                    <span class="copyright">Hak Cipta 2020 &copy; <a href="https://nana-admin.iniadi.xyz">Nana Admin Template</a>.</span>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <button class="btn btn-btt btn-success"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Nana Admin Core  -->
+    <script src="/modul/jquery/jquery.min.js"></script>
+    <script type="module" src="/modul/popper.js/popper.min.js"></script>
+    <script src="/modul/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Addons -->
+    <script src="/modul/ps/perfect-scrollbar.min.js"></script>
+
+    <!-- Main -->
+    <script src="/js/nana.js"></script>
+
+</body>
+</html>

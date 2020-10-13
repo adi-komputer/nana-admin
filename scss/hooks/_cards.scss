@@ -1,0 +1,20 @@
+.card {
+    &-summary {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .icon-wrapper {
+            .fas, .far, .fab, .fal {
+                border-radius: 0.25rem;
+                min-width: 5rem;
+                min-height: 5rem;
+                display: flex;
+                font-size: 2rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

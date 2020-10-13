@@ -1,0 +1,23 @@
+// Container
+
+.container-wrap {
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    transition: .3s all;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up ('md') {
+        .toggled & {
+            width: calc(100% - 75px);
+        }
+    }
+
+    @include media-breakpoint-down ('md') {
+        width: 100% !important;
+    }
+
+    #section-top {
+        flex: 1 0 auto;
+    }
+}

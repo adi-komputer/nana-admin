@@ -1,0 +1,38 @@
+{
+  "name": "nana-admin",
+  "version": "0.0.6",
+  "description": "Template Bootstrap yang modern, intuitif dan atraktif untuk semua aplikasi berbasis website.",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "moment": "^2.29.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/nana-admin.scss:css/nana-admin.css --style=expanded",
+    "scss-mini": "sass --watch scss/nana-admin.scss:css/nana-admin.min.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/si-digi/nana-admin.git"
+  },
+  "keywords": [
+    "admin-ui",
+    "admin-dashboard",
+    "admin-design",
+    "admin-bootstrap",
+    "bootstrap5",
+    "bootstrap",
+    "jquery",
+    "popper"
+  ],
+  "author": "Adi Komputer",
+  "license": "GNU GPL V3",
+  "bugs": {
+    "url": "https://github.com/si-digi/nana-admin/issues"
+  },
+  "homepage": "https://github.com/si-digi/nana-admin#readme"
+}
